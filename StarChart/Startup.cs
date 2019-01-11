@@ -13,7 +13,6 @@ namespace StarChart
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
             services.AddDbContext<ApplicationDbContext>(options => options.UseInMemoryDatabase("StartChart"));
         }
 
